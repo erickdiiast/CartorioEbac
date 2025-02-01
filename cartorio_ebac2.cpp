@@ -119,8 +119,9 @@ int main()
 	printf("Escolha a opção que deseja utilizar: \n\n"); //Inicio do menu inicial
 	printf("\t1 - Registrar Aluno \n");
 	printf("\t2 - Consultar Aluno \n");
-	printf("\t3 - Deletar Registro \n\n");
-	printf("Opção: "); // Fim do meni inicial
+	printf("\t3 - Deletar Registro \n");
+	printf("\t4 - Sair do sistema \n\n");
+	printf("Opção: "); // Fim do menu inicial
 	
 	scanf("%d", &opcao); //Armazenando a escolha do usuário
 	
@@ -139,6 +140,12 @@ int main()
 		case 3:
 		remover();
 		break;
+		
+		case 4:
+		printf("Orbigado, e até a próxima!");
+		return 0;
+		break;
+		
 		
 		default:
 			printf("Opção inválida \n");
